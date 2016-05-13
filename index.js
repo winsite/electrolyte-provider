@@ -5,6 +5,7 @@ const ElectrolyteProvider = function() {
 };
 
 ElectrolyteProvider.prototype.add = function(id, value) {
+	value['@literal'] = true;
 	this._provider[id] = value;
 };
 
